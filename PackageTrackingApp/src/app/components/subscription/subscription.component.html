@@ -1,0 +1,29 @@
+<app-nav></app-nav>
+<div class="container" >
+    <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" style="text-align: center; margin-top: 50px;" >
+        <h2 style="background-color: rgba(168, 156, 156, 0.5);">Subscription</h2>
+        <p>If you want to subscribe to receive e-mails when the package is delivered, please enter the code of the package that you would like to track and your e-mail adress:</p>
+        <form [formGroup]="subForm" (ngSubmit)="subscription()">
+            <div class="row">
+                <div class="form-group">
+                    <label for="packageCode" class="form-label">Package Code</label>
+                    <input type="number" name="packageCode" id="packageCode" class="form-control" formControlName="packageCode"> 
+                 </div> 
+            </div>
+            <div class="row ">
+                <div class="form-group">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" formControlName="email">       
+                </div> 
+            </div>
+            <div class="row">
+                <div  class="text-center">
+                    <button [disabled]="!subForm.valid" class="btn btn-success" type="submit">Subscribe</button>
+                </div> 
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-4"></div>
+</div>

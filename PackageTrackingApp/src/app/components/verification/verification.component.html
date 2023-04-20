@@ -1,0 +1,30 @@
+<app-nav></app-nav>
+<div class="container">  
+    <h3>Verification of deliverers</h3> 
+    <div *ngIf="users.length != 0">
+        <table class="table"> 
+            <thead>
+                <tr>
+                  <th scope="col">First name</th>
+                  <th scope="col">Last name</th>
+                  <th scope="col">Username</th>
+                  <th scope="col">User type</th>
+                </tr> 
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of users">
+                    <td scope="row">{{item.firstname}}</td>
+                    <td scope="row">{{item.lastname}}</td> 
+                    <td scope="row">{{item.username}}</td> 
+                    <td scope="row">
+                        <button class="btn btn-success" style="margin: 5px;" type="submit" (click)="Verify(item.id)">Verify</button>
+                        <button class="btn btn-success" type="submit" style="margin: 5px;" (click)="Dismiss(item.id)">Decline</button>
+                    </td> 
+                </tr>
+        </tbody>
+        </table> 
+    </div>
+    <div *ngIf="users.length==0">
+        <p>There is no new users for verification!</p>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<app-nav></app-nav>
+<div class="container" >
+    <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" style="text-align: center; margin-top: 50px;" >
+        <h2 style="background-color: rgba(168, 156, 156, 0.5);">Registration</h2>
+        <form [formGroup]="registrationForm" (ngSubmit)="registration()">
+            <div class="row ">
+                <div class="form-group">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" name="username" id="username" class="form-control" formControlName="username">
+                
+                </div> 
+            </div>
+            <div class="row">
+                <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" id="password" class="form-control" formControlName="password">
+                
+                </div> 
+            </div>
+            <div class="row">
+                <div class="form-group">
+                <label for="password2" class="form-label">Password confirmation</label>
+                <input type="password" name="password2" id="password2" class="form-control" formControlName="password2">
+                
+                </div> 
+            </div>
+            <div class="row">
+                <div class="form-group">
+                <label for="firstname" class="form-label">First name</label>
+                <input type="text" name="firstname" id="firstname" class="form-control" formControlName="firstname">
+                
+                </div> 
+            </div>
+            <div class="row">
+                <div class="form-group">
+                <label for="lastname" class="form-label">Last name</label>
+                <input type="text" name="lastname" id="lastname" class="form-control" formControlName="lastname">
+                
+                </div> 
+            </div>
+            <div class="row">
+                <div class="form-group">
+                <label for="usertype" class="form-label">User type</label> 
+                <select name="usertype"  class="form-control" formControlName="usertype">
+                    <option>User</option>
+                    <option>Deliverer</option>
+                </select>
+                </div> 
+            </div> 
+            <br>
+            <div class="row">
+                <div  class="text-center">
+                    <button [disabled]="!registrationForm.valid" class="btn btn-success" type="submit">Register</button>
+                </div> 
+            </div>
+        </form>
+    </div>
+    
+    <div class="col-sm-4"></div>
+</div>

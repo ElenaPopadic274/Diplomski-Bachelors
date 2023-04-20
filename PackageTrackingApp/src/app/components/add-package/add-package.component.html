@@ -1,0 +1,34 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4" style="text-align: center; margin-top: 50px;">
+            <h2>Add new package</h2>
+            <form [formGroup]="addForm" (ngSubmit)="add()">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Package Code</label>
+                        <input type="number" name="code" id="code" class="form-control" formControlName="code"> 
+                     </div> 
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                    <label for="pacstatus" class="form-label">Package status</label> 
+                    <select name="pacstatus"  class="form-control" formControlName="pacstatus">
+                        <option>IN WAREHOUSE</option>
+                        <option>IN DELIVERY</option>
+                        <option>DELIVERED</option>
+                    </select>
+                    </div> 
+                </div> 
+                <br>
+                <div class="row">
+                    <div  class="text-center">
+                        <button [disabled]="!addForm.valid" class="btn btn-success" type="submit">ADD</button>
+                    </div> 
+                </div>
+            </form>
+        </div>  
+      <div class="col-sm-4"></div>
+    </div>
+</div>

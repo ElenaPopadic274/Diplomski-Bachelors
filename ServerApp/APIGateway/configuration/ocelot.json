@@ -1,0 +1,244 @@
+{
+
+  "ReRoutes": [
+
+
+
+    {
+
+      "DownstreamPathTemplate": "/api/users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44342"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
+    },
+
+    {
+
+      "DownstreamPathTemplate": "/api/users/put",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44342"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/put",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+
+
+
+
+
+    {
+
+      "DownstreamPathTemplate": "/api/users/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44342"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/{id}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+
+
+
+
+
+    {
+
+      "DownstreamPathTemplate": "/api/users/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44342"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/login",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+
+
+
+    {
+
+      "DownstreamPathTemplate": "/api/users/username/{username}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44342"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/username/{username}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+
+
+
+    {
+
+      "DownstreamPathTemplate": "/api/users/Unactivated",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44342"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/Unactivated",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+
+
+
+
+    {
+
+      "DownstreamPathTemplate": "/api/users/verifyUser",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44342"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/verifyUser",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+
+
+
+
+    {
+
+      "DownstreamPathTemplate": "/api/users/dismissUser",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44342"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/users/dismissUser",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+
+
+
+
+
+
+
+
+
+    {
+
+      "DownstreamPathTemplate": "/api/packages",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44339"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/packages",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
+    },
+
+
+    {
+
+      "DownstreamPathTemplate": "/api/packages/put",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44339"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/packages/put",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+
+
+    {
+
+      "DownstreamPathTemplate": "/api/packages/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44339"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/packages/{id}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
+    },
+
+
+    {
+
+      "DownstreamPathTemplate": "/api/emails",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44377"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/emails",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    }
+
+
+
+
+
+
+
+
+
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44382"
+  }
+}

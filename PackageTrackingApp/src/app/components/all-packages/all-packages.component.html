@@ -1,0 +1,18 @@
+<app-nav></app-nav>
+<div class="container"  style="text-align: center; margin-top: 50px;">  
+    <h3 style="text-align: center;">All packages</h3> 
+    <div *ngFor="let packet of packets"> 
+        <table>
+            <tr>
+                <th>Package Code:</th>
+                <th>Package Status:</th>
+            </tr>
+            <tr>
+                <td>{{ packet.packageCode }}</td>
+                <td>{{ packet.packageStatus }}</td>
+            </tr>
+          </table>
+    </div>
+</div>  
+
+

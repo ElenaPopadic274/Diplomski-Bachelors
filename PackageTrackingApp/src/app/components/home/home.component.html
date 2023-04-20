@@ -1,0 +1,43 @@
+<app-nav></app-nav>
+<div style="margin-top: 50px;"></div>
+<h1 style="text-align:center;">WELCOME TO THE PACKAGE TRACKING APP</h1>
+<div *ngIf="isActivated=='False'">
+    <h2>Status: {{status}}</h2>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <form [formGroup]="trackerForm" style="text-align: center; margin-top: 50px;">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="code" style="width: 400px;text-align: center;" class="form-label">PACKAGE TRACKING CODE</label>
+                        <input type="number" name="code" id="code" class="form-control" formControlName="code">
+                    </div>  
+                </div>
+            <br>
+            <div class="row">
+                <div  class="text-center">
+                    <button [disabled]="!trackerForm.valid" class="btn btn-success" type="submit" (click)="track()">Track package</button>
+                </div> 
+            </div>
+            </form>
+</div>
+<div *ngIf="packets!=null">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4" style="background-color:rgba(168, 156, 156, 0.5); text-align: center; margin-top: 100px;">
+            <p>PACKAGE STATUS:</p>
+            {{packets.packageStatus}}
+        </div>
+    </div>
+</div>
+<div *ngIf="invalidNumber">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4" style="background-color:rgba(168, 156, 156, 0.5); text-align: center; margin-top: 100px;">
+            <p>INVALID PACKET NUMBER</p>
+        </div>
+    </div>
+</div>

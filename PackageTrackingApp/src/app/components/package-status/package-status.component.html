@@ -1,0 +1,36 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4" style="text-align: center; margin-top: 50px;">
+            <h2>Change package status</h2>
+            <form [formGroup]="statusForm" (ngSubmit)="status()" style="background-color:(168, 156, 156, 0.5);">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="packageCode" class="form-label">Package Code</label>
+                        <input type="number" name="packageCode" id="packageCode" class="form-control" formControlName="packageCode"> 
+                     </div> 
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                    <label for="pacstatus" class="form-label">Package status</label> 
+                    <select name="pacstatus"  class="form-control" formControlName="pacstatus">
+                        <option>IN WAREHOUSE</option>
+                        <option>IN DELIVERY</option>
+                        <option>DELIVERED</option>
+                    </select>
+                    </div> 
+                </div> 
+                <br/>
+                <div class="row">
+                    <div  class="text-center">
+                        <button [disabled]="!statusForm.valid" class="btn btn-success" type="submit">Change</button>
+                    </div> 
+                </div>
+            </form>
+        </div> 
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+
+            

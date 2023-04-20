@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('https://img.freepik.com/free-photo/delivery-truck-with-gift-box-present-surprise-free-shipping-fast-delivery-car-deliver-express-delivery-transportation-logistics-concept-background-3d-rendering-illustration_56104-2062.jpg?w=1060&t=st=1675705072~exp=1675705672~hmac=f603dc154d55202b36c4ea0f1d0ef930a2e402943428d17314a4442d15d47d25');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 410px;
+margin-top: auto;
+margin-bottom: auto;
+width: 450px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.input-group-text{
+    width: 300px;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #000000;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 100px;
+background-color: #000000;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #000000;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+
+h1{
+    color: rgba(0, 0, 0, 0.815);
+    background: transparent;
+}
+
+form{
+    background-color: rgba(168, 156, 156, 0.5);
+}
+
+label{
+    width:400px; 
+    text-align: left;
+}
