@@ -42,7 +42,7 @@ export class PackageStatusComponent implements OnInit {
           }
           else  
           {
-            alert("");
+            alert("Error: (1)Package code doesn't exist; (2)Package that has been delivered can not be delivered again.");
           }
         }
       );
