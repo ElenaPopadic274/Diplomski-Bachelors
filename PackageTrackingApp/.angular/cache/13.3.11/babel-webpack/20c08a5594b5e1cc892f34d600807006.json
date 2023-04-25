@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Email {\n  constructor() {\n    this.packageId = 0;\n    this.email = \"\";\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"/*export enum PackageStatus{\r\n    IN_WAREHOUSE,\r\n    IN_DELIVERY,\r\n    DELIVERED\r\n}\r\n*/\nexport class Package {\n  constructor() {\n    this.packageCode = 0;\n    this.packageStatus = \"\";\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
