@@ -32,7 +32,7 @@ namespace PackageService.Services
             }
             catch (Exception e)
             {
-                return false;
+                throw;
             }
 
             return true;

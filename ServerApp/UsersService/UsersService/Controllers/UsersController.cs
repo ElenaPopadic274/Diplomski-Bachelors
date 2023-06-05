@@ -27,7 +27,7 @@ namespace UsersService.Controllers
 
         // GET: api/<UsersController>
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+// [Authorize(Roles = "Admin")]
         public ActionResult Get()
         {
             //principal, clames principal
@@ -104,7 +104,7 @@ namespace UsersService.Controllers
             return BadRequest();
         }
         [HttpGet("Unactivated")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public ActionResult Unactivated()
         {
             List<UserDto> ret = _userService.Unactivated();
@@ -112,7 +112,7 @@ namespace UsersService.Controllers
 
         }
         [HttpPost("verifyUser")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public ActionResult VerifyUser([FromBody] long id)
         {
             bool ret = _userService.VerifyUser(id);
@@ -120,7 +120,7 @@ namespace UsersService.Controllers
 
         }
         [HttpPost("dismissUser")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public ActionResult DismissUser([FromBody] long id)
         {
             bool ret = _userService.DismissUser(id);

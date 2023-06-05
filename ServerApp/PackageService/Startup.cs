@@ -94,7 +94,7 @@ namespace PackageService
             //------------SERVICES------------
             services.AddScoped<IPackageService, PackageService.Services.PackageService>();
             //------------DATABASE------------
-            services.AddDbContext<PackagesDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PackageDatabase")));
+            services.AddDbContext<PackagesDbContext>(options => options.UseMySql(Configuration.GetConnectionString("PackageDatabase"), ServerVersion.Parse("8.0.33.0-mysql")));
             //------------MAPPER------------
             var mapperConfig = new MapperConfiguration(mc =>
             {
@@ -114,6 +114,7 @@ namespace PackageService
                     .AllowCredentials();
                 });
             });
+            services.AddAWSLambdaHosting(LambdaEventSource.HttpApi);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

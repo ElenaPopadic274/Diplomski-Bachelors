@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: true,\n  ServiceUrl: \"https://r7g4p2b5bgwqkjp3gf2bwp2wum0ewivx.lambda-url.eu-north-1.on.aws\",\n  allowedDomains: ['https://r7g4p2b5bgwqkjp3gf2bwp2wum0ewivx.lambda-url.eu-north-1.on.aws']\n};","map":null,"metadata":{},"sourceType":"module"}

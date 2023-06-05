@@ -10,8 +10,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44342"
+          "Host": "etm247qftnh53bk4ihuolzphaa0qycvl.lambda-url.eu-north-1.on.aws",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/users",
@@ -27,8 +27,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44342"
+          "Host": "etm247qftnh53bk4ihuolzphaa0qycvl.lambda-url.eu-north-1.on.aws",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/users/put",
@@ -47,8 +47,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44342"
+          "Host": "etm247qftnh53bk4ihuolzphaa0qycvl.lambda-url.eu-north-1.on.aws",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/users/{id}",
@@ -67,8 +67,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44342"
+          "Host": "etm247qftnh53bk4ihuolzphaa0qycvl.lambda-url.eu-north-1.on.aws",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/users/login",
@@ -85,8 +85,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44342"
+          "Host": "etm247qftnh53bk4ihuolzphaa0qycvl.lambda-url.eu-north-1.on.aws",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/users/username/{username}",
@@ -103,8 +103,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44342"
+          "Host": "etm247qftnh53bk4ihuolzphaa0qycvl.lambda-url.eu-north-1.on.aws",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/users/Unactivated",
@@ -122,8 +122,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44342"
+          "Host": "etm247qftnh53bk4ihuolzphaa0qycvl.lambda-url.eu-north-1.on.aws",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/users/verifyUser",
@@ -141,8 +141,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44342"
+          "Host": "etm247qftnh53bk4ihuolzphaa0qycvl.lambda-url.eu-north-1.on.aws",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/users/dismissUser",
@@ -165,8 +165,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44339"
+          "Host": "6tyn7hvh7siay2c7ryqiup6khy0hituf.lambda-url.eu-north-1.on.aws",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/packages",
@@ -183,8 +183,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44339"
+          "Host": "6tyn7hvh7siay2c7ryqiup6khy0hituf.lambda-url.eu-north-1.on.aws",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/packages/put",
@@ -200,8 +200,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44339"
+          "Host": "6tyn7hvh7siay2c7ryqiup6khy0hituf.lambda-url.eu-north-1.on.aws",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/packages/{id}",
@@ -218,8 +218,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "44377"
+          "Host": "s5nggtyqyfzbrsq5nj2aimfkci0hjfwh.lambda-url.eu-north-1.on.aws",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/emails",
@@ -227,18 +227,8 @@
         "POST"
       ]
     }
-
-
-
-
-
-
-
-
-
-
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:44382"
+    "BaseUrl": "localhost:44382"
   }
 }

@@ -67,7 +67,7 @@ namespace APIGateway
             {
                 options.AddPolicy(name: _cors, builder =>
                 {
-                    builder.WithOrigins("http://localhost:4200")
+                    builder.WithOrigins("http://mypackagetrackingapp.s3-website.eu-north-1.amazonaws.com")
                     .AllowAnyHeader()
                     .AllowAnyMethod()
                     .AllowCredentials();
@@ -87,6 +87,7 @@ namespace APIGateway
                 options.TokenValidationParameters.ValidateAudience = false;
                 options.TokenValidationParameters.ValidateIssuerSigningKey = false;
             });
+            services.AddAWSLambdaHosting(LambdaEventSource.HttpApi);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

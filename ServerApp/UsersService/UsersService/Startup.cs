@@ -94,7 +94,9 @@ namespace UsersService
             services.AddScoped<IUserService, UserService>();
             //------------DATABASE------------
             //registracija db contexta u kontejneru zavisnosti, njegov zivotni vek je Scoped
-            services.AddDbContext<UsersDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("UserDatabase")));
+            //   services.AddDbContext<PackagesDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("UserDatabase")));
+            //var serverVersion = new MySqlServerVersion(new Version(8, 0, 31));
+            services.AddDbContext<UsersDbContext>(options =>  options.UseMySql(Configuration.GetConnectionString("UserDatabase"), Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.33.0-mysql")));
             //Registracija mapera u kontejneru, zivotni vek singleton
             //------------MAPPER------------
             var mapperConfig = new MapperConfiguration(mc =>
@@ -115,6 +117,7 @@ namespace UsersService
                     .AllowCredentials();
                 });
             });
+            services.AddAWSLambdaHosting(LambdaEventSource.HttpApi);
 
         }
 

@@ -94,7 +94,7 @@ namespace EmailService
 
             //------------DATABASE------------
             //registracija db contexta u kontejneru zavisnosti, njegov zivotni vek je Scoped
-            services.AddDbContext<MailDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EmailDatabase")));
+            services.AddDbContext<MailDbContext>(options => options.UseMySql(Configuration.GetConnectionString("MailDatabase"), Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.33.0-mysql")));
             //Registracija mapera u kontejneru, zivotni vek singleton
             //------------MAPPER------------
             var mapperConfig = new MapperConfiguration(mc =>
@@ -115,6 +115,7 @@ namespace EmailService
                     .AllowCredentials();
                 });
             });
+            services.AddAWSLambdaHosting(LambdaEventSource.HttpApi);
         }
       
 

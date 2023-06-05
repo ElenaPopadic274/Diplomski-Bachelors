@@ -61,11 +61,19 @@ namespace PackageService.Controllers
 
         // POST api/<PackageController>
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+       // [Authorize(Roles = "Admin")]
         public ActionResult Post([FromBody] PackageDto packet)
         {
-            if (packageService.AddEntity(packet))
-                return Ok(true);
+            try
+            {
+                if (packageService.AddEntity(packet))
+                    return Ok(true);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(new {e.Message,e.StackTrace,e.InnerException});
+            }
+
 
 
             return BadRequest(false);
